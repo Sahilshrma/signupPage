@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for More</title>
+    <link rel="stylesheet" href="/easytutrial/signpage.css">
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(cup-of-coffee-1280537_1920.jpg) ;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;   
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color:black;
+    color: #fff;
+    width: 340px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 45px 21px;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    filter:invert(1);
+    position:absolute;
+    top: -30px;
+    left: calc( 50% - 30px );
+}
+
+.loginbox h1{
+    /* margin: 41px 38px; */
+    text-align: center;
+    color: rgb(233, 91, 91);
+
+}
+.loginbox p{
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+.loginbox input{
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 7px;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    font-size: 20px;
+
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(240, 58, 58);
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(200, 238, 236);
+    background-color: rgb(223, 119, 82);
+}
+.loginbox a{
+    text-decoration: none;
+    color: darkgray;
+    line-height: 20px;
+    font-size: 12px
+}
+.loginbox a:hover{
+    color: blanchedalmond;
+    
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="user.png" alt="" class="avatar">
+        <h1>Login here</h1>
+        <form action="action.php">
+           <p>Username</p>
+            <input type="text" name="name" placeholder="Enter Username">
+           <p>Password</p>
+            <input type="password" name="name" placeholder="Enter Password"><br>
+            <input type="submit" name="" id="" value="Login">
+            <!-- <button value="submit"> Login </button><br> -->
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have a account yet?</a>
+        </form>
+    </div>
+    
+</body>
+</html>
